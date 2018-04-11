@@ -20,7 +20,10 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../src/assets/common/layout-1/css/styles.css"
+        "../src/assets/common/layout-1/css/styles.css",
+        "../src/assets/common/layout-1/css/responsive.css",
+        "../src/assets/common/common-css/bootstrap.css",
+        "../src/assets/common/common-css/ionicons.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",

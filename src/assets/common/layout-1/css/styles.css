@@ -95,12 +95,12 @@ header{ font-weight: 400; }
 
 header{ overflow: hidden; background: #fff; box-shadow: 0px 2px 10px rgba(0,0,0, .3); }
 
-header .logo{ float: left; height: 20px; margin: 20px 30px; }
+header .logo{ float: left; height: 40px; margin: 10px 20px; margin-left: 8px; }
 
 header .logo img{ height: 100%; width: auto; }
 
 
-header .main-menu{ display: inline-block; float: left; }
+header .main-menu{ display: inline-block; float: left; margin-bottom: 0px; }
 
 header .main-menu > li{ float: left; }
 
@@ -139,7 +139,7 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 4. SLIDER
 --------------------------------- */
 
-.slider{ height: 300px; width: 100%; background-image: url(assets/images/header/slider-1.jpg); background-size: cover; }  
+.slider{ height: 300px; width: 100%; background-image: url(../../../images/header/slider-1.jpg); background-size: cover; }  
  
 
  

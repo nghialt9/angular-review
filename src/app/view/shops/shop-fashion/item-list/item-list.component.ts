@@ -3,10 +3,10 @@ import { ShopFashion } from "../../../../common/models/shop-fashion"
 import { Observable } from "rxjs/Observable";
 
 @Component({
-  selector: "app-item-card",
-  templateUrl: "./item-card.component.html"
+  selector: "app-item-list",
+  templateUrl: "./item-list.component.html"
 })
-export class ItemCardComponent implements OnInit {
+export class ItemListComponent implements OnInit {
   shopFashion: ShopFashion[] = [
     {
       blogImage: "assets/images/content/alex-lambley-205711.jpg",

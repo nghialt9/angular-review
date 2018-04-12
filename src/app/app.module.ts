@@ -9,7 +9,7 @@ import { HeaderTopComponent } from "./view/components/header-top/header-top.comp
 import { FooterTopComponent } from "./view/components/footer-top/footer-top.component";
 import { LoginComponent } from "./view/components/login/login.component";
 import { ShopFashionComponent } from "./view/shops/shop-fashion/shop-fashion.component";
-import { ItemCardComponent } from "./view/shops/shop-fashion/item-card/item-card.component";
+import { ItemListComponent } from "./view/shops/shop-fashion/item-list/item-list.component";
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { ItemCardComponent } from "./view/shops/shop-fashion/item-card/item-card
     FooterTopComponent,
     LoginComponent,
     ShopFashionComponent,
-    ItemCardComponent
+    ItemListComponent
   ],
   imports: [
     BrowserModule

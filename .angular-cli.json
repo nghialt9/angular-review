@@ -23,7 +23,9 @@
         "../src/assets/common/layout-1/css/styles.css",
         "../src/assets/common/layout-1/css/responsive.css",
         "../src/assets/common/common-css/bootstrap.css",
-        "../src/assets/common/common-css/ionicons.css"
+        "../src/assets/common/common-css/ionicons.css",
+        "../src/assets/common/single-post-1/css/responsive.css",
+        "../src/assets/common/single-post-1/css/styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",

@@ -8,8 +8,9 @@ import { ShopsComponent } from "./view/shops/shops.component";
 import { HeaderTopComponent } from "./view/components/header-top/header-top.component";
 import { FooterTopComponent } from "./view/components/footer-top/footer-top.component";
 import { LoginComponent } from "./view/components/login/login.component";
-import { ShopFashionComponent } from "./view/shops/shop-fashion/shop-fashion.component";
-import { ItemListComponent } from "./view/shops/shop-fashion/item-list/item-list.component";
+import { AppRoutingngModule } from './app-routing.module';
+import { ShopFashionService } from "./common/service/shop-fashion-service";
+import { ShopFashion } from "./common/models/shop-fashion-module";
 
 
 @NgModule({
@@ -20,13 +21,12 @@ import { ItemListComponent } from "./view/shops/shop-fashion/item-list/item-list
     HeaderTopComponent,
     FooterTopComponent,
     LoginComponent,
-    ShopFashionComponent,
-    ItemListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingngModule
   ],
-  providers: [],
+  providers: [ShopFashionService, ShopFashion],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,8 +9,8 @@ import { ShopFashionService } from '../../../../common/service/shop-fashion-serv
 })
 export class ItemListComponent implements OnInit {
   shopFashions: Observable<any[]>;
-  constructor(private _shopFashionService: ShopFashionService,
-              private _shopModel: ShopFashion) { }
+  shopModel:Observable<any[]>;
+  constructor(private _shopFashionService: ShopFashionService) { }
 
   ngOnInit() {
     this.getShops()
@@ -25,5 +25,9 @@ export class ItemListComponent implements OnInit {
     //     this.errorMessage = error
     //   }
     // )
+  }
+
+  addModel(id:string): Observable<ShopFashion[]>{
+    return this.shopFashions.map(shoes => shoes.find(shoe => shoe.id === id));
   }
 }

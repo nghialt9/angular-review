@@ -8,7 +8,7 @@ import { ShopFashion } from '../models/shop-fashion-module';
 
 @Injectable()
 export class ShopFashionService {
-    baseUrl: string = 'https://0313c372.ngrok.io/api/ShopProduct/'
+    baseUrl: string = 'https://ad8a2ac0.ngrok.io/api/ShopProduct/'
 
     constructor(private _http: Http) { }
 

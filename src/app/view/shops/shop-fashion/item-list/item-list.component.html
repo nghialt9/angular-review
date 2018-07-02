@@ -6,12 +6,12 @@
         <div class="card h-100">
           <div class="single-post post-style-1">
             <div class="blog-image"><img [src]="shopfashion.image" alt="Blog Image"></div>
-            <a class="avatar" [routerLink]="['/shop-fashion', shopfashion.id]"><img [src]="shopfashion.avatar" (click)="addModel("+{{shopfashion.id}}+")" alt="Profile Image"></a>
-            <div class="blog-info"><h4 class="title"><a href="#"><b>{{shopfashion.name}}</b></a></h4>
+            <a class="avatar" [routerLink]="['/shop-fashion', shopfashion.id]"><img [src]="shopfashion.avatar" alt="Profile Image"></a>
+            <div class="blog-info"><h4 class="title"><a><b>{{shopfashion.name}}</b></a></h4>
               <ul class="post-footer">
-                <li><a href="#"><i class="ion-heart"></i>{{shopfashion.price}}</a></li>
-                <li><a href="#"><i class="ion-chatbubble"></i>{{shopfashion.quality}}</a></li>
-                <li><a href="#"><i class="ion-eye"></i>{{shopfashion.style}}</a></li>
+                <li><a ><i class="ion-heart"></i>{{shopfashion.price}}</a></li>
+                <li><a ><i class="ion-chatbubble"></i>{{shopfashion.quantity | currency}}</a></li>
+                <li><a (click)="addShopFashion(shopfashion.id)"><i>Add To Cart</i></a></li>
               </ul>
             </div>
             <!-- blog-info -->

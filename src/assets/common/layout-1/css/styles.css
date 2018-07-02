@@ -113,11 +113,11 @@ header .main-menu > li:first-child > a{ border-left: 1px solid #eee; }
 
 header .visible.main-menu{ display: block; }
 
-
+header .ion-ios-cart-outline{float: right; font-size: 3em ; padding: 0 20px 0; background-color: crimson}
 
 /* SEARCH AREA */
 
-header .src-area{ position: relative; height: 60px; width: 50%; float: right; display: inline-block; background: #F5F7F6; }
+header .src-area{ position: relative; height: 60px; width: 50%; display: inline-block; background: #F5F7F6; }
 
 header .src-area .src-input{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%;
 	padding: 0 20px 0 70px; background: transparent; border: 0; outline: 0; }

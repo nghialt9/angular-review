@@ -7,33 +7,27 @@
             <div class="post-info">
               <div class="left-area">
                 <a class="avatar" href="#">
-                  <img src="images/avatar-1-120x120.jpg" alt="Profile Image">
+                  <img src="{{shopFashionModule.avatar}}" alt="Profile Image">
                 </a>
               </div>
               <div class="middle-area">
                 <a class="name" href="#">
-                  <b>{{shopFashion.Name}}</b>
+                  <b>{{shopFashionModule.name}}</b>
                 </a>
-                <h6 class="date">on Sep 29, 2017 at 9:48 am</h6>
+                <h6 class="date">on {{dateNow|date:'MMM dd, yyyy EEEE HH:mm:ss:SS a'}}</h6>
               </div>
             </div>
             <!-- post-info -->
             <h3 class="title">
               <a href="#">
-                <b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</b>
+                <b>{{shopFashionModule.title}}</b>
               </a>
             </h3>
-            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <div class="post-image">
-              <img src="images/blog-1-1000x600.jpg" alt="Blog Image">
+            <p>{{firstText}}</p>
+            <div class="blog-image">
+              <img [src]="shopFashionModule.image" alt="Blog Image">
             </div>
-            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>{{endText}}</p>
             <ul class="tags">
               <li>
                 <a href="#">Mnual</a>
@@ -87,7 +81,7 @@
           <div class="post-footer post-info">
             <div class="left-area">
               <a class="avatar" href="#">
-                <img src="images/avatar-1-120x120.jpg" alt="Profile Image">
+                <img src="" alt="Profile Image">
               </a>
             </div>
             <div class="middle-area">
@@ -131,28 +125,13 @@
             </h4>
             <ul>
               <li>
-                <a href="#">Manual</a>
+                <a [routerLink]="['../../item-card']" (click)="addShopFashion()">AddToCard</a>
               </li>
               <li>
-                <a href="#">Liberty</a>
+                <a href="#">Quantity</a>
               </li>
               <li>
-                <a href="#">Recomendation</a>
-              </li>
-              <li>
-                <a href="#">Interpritation</a>
-              </li>
-              <li>
-                <a href="#">Manual</a>
-              </li>
-              <li>
-                <a href="#">Liberty</a>
-              </li>
-              <li>
-                <a href="#">Recomendation</a>
-              </li>
-              <li>
-                <a href="#">Interpritation</a>
+                <a href="#">BuyNow</a>
               </li>
             </ul>
           </div>
@@ -177,11 +156,11 @@
           <div class="single-post post-style-1">
 
             <div class="blog-image">
-              <img src="images/alex-lambley-205711.jpg" alt="Blog Image">
+              <img src="" alt="Blog Image">
             </div>
 
             <a class="avatar" href="#">
-              <img src="images/icons8-team-355979.jpg" alt="Profile Image">
+              <img src="" alt="Profile Image">
             </a>
 
             <div class="blog-info">
@@ -221,11 +200,11 @@
           <div class="single-post post-style-1">
 
             <div class="blog-image">
-              <img src="images/caroline-veronez-165944.jpg" alt="Blog Image">
+              <img src="" alt="Blog Image">
             </div>
 
             <a class="avatar" href="#">
-              <img src="images/icons8-team-355979.jpg" alt="Profile Image">
+              <img src="" alt="Profile Image">
             </a>
 
             <div class="blog-info">
@@ -265,11 +244,11 @@
           <div class="single-post post-style-1">
 
             <div class="blog-image">
-              <img src="images/marion-michele-330691.jpg" alt="Blog Image">
+              <img src="" alt="Blog Image">
             </div>
 
             <a class="avatar" href="#">
-              <img src="images/icons8-team-355979.jpg" alt="Profile Image">
+              <img src="" alt="Profile Image">
             </a>
 
             <div class="blog-info">
@@ -354,7 +333,7 @@
             <div class="post-info">
 
               <div class="left-area">
-                <a class="avatar" href="#"><img src="images/avatar-1-120x120.jpg" alt="Profile Image"></a>
+                <a class="avatar" href="#"><img src="" alt="Profile Image"></a>
               </div>
 
               <div class="middle-area">
@@ -380,7 +359,7 @@
             <div class="post-info">
 
               <div class="left-area">
-                <a class="avatar" href="#"><img src="images/avatar-1-120x120.jpg" alt="Profile Image"></a>
+                <a class="avatar" href="#"><img src="" alt="Profile Image"></a>
               </div>
 
               <div class="middle-area">
@@ -409,7 +388,7 @@
             <div class="post-info">
 
               <div class="left-area">
-                <a class="avatar" href="#"><img src="images/avatar-1-120x120.jpg" alt="Profile Image"></a>
+                <a class="avatar" href="#"><img src="" alt="Profile Image"></a>
               </div>
 
               <div class="middle-area">

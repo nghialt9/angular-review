@@ -1,7 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
-
 import { AppComponent } from "./app.component";
 import { AdminComponent } from "./view/admin/admin.component";
 import { ShopsComponent } from "./view/shops/shops.component";
@@ -10,8 +8,6 @@ import { FooterTopComponent } from "./view/components/footer-top/footer-top.comp
 import { LoginComponent } from "./view/components/login/login.component";
 import { AppRoutingngModule } from './app-routing.module';
 import { ShopFashionService } from "./common/service/shop-fashion-service";
-import { ShopFashion } from "./common/models/shop-fashion-module";
-
 
 @NgModule({
   declarations: [
@@ -20,13 +16,13 @@ import { ShopFashion } from "./common/models/shop-fashion-module";
     ShopsComponent,
     HeaderTopComponent,
     FooterTopComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingngModule
   ],
-  providers: [ShopFashionService, ShopFashion],
+  providers: [ShopFashionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,9 +9,10 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 const routesConfig: Routes = [
     {
+        
         path: 'shop-fashion',
         component: ShopFashionComponent,
-        children:[
+        children: [
             {
                 path: '',
                 component: ItemListComponent,
@@ -22,20 +23,21 @@ const routesConfig: Routes = [
                 component: ItemDetailComponent
             }
         ]
-        },
+    }
 ]
 
 @NgModule({
     declarations: [
-
+        ShopFashionComponent,
+        ItemDetailComponent
     ],
     imports: [
         CommonModule,
         BrowserModule,
         HttpModule,
-        RouterModule.forChild(routesConfig)      
+        RouterModule.forChild(routesConfig)
     ],
     exports: [RouterModule]
 })
 
-export class ShopFashionRoutingngModule {}
+export class ShopFashionRoutingngModule { }

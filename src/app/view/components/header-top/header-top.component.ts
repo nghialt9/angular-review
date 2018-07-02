@@ -7,11 +7,11 @@ import { ShopFashionService } from '../../../common/service/shop-fashion-service
   styleUrls:['./header-top.component.css']
 })
 export class HeaderTopComponent implements OnInit {
-  total: number;
+  totalQty: number;
   constructor(private _shopFashionService: ShopFashionService) { }
 
   ngOnInit() {
-    window.setInterval(() => { this.total = this._shopFashionService.getLengthShopFashion(); }, 10)
+    window.setInterval(() => { this.totalQty = this._shopFashionService.getLengthShopFashion(); }, 10)
   }
 
 }

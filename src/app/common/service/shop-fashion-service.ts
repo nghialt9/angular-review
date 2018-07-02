@@ -32,6 +32,15 @@ export class ShopFashionService {
         this.shopFashionModule.splice(index, 1)
     }
 
+    getTotalPriceShopFashion()
+    {
+        var price: number = 0;
+        this.shopFashionModule.forEach(element => {
+            price += (element.quantity * element.price);
+        });
+        return price;
+    }
+
     getLengthShopFashion() {
         var num: number = 0;
         this.shopFashionModule.forEach(element => {
@@ -41,8 +50,9 @@ export class ShopFashionService {
     }
 
     incrementQty(index: number) {
-
-        this.shopFashionModule[index].quantity += 1;
+        if (this.shopFashionModule[index].quantity < this.shopFashionModule[index].quantityInStock) {
+            this.shopFashionModule[index].quantity += 1;
+        }
     }
 
     decrementQty(index: number) {

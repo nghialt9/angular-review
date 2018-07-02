@@ -20,7 +20,7 @@
                 <td>{{ item.price }}</td>
                 <td>
                         <label (click)="decrementQty(i)" item-right>-</label>
-                        <input type="number" min="1" [value]="item.quantity" [(ngModel)]="item.quantity"/>
+                        <input type="number" min="1" [value]="item.quantity" [(ngModel)]="item.quantity" [max]="item.quantityInStock"/>
                         <label (click)="incrementQty(i)" item-right>+</label>
                 </td>
                 <td>
@@ -42,11 +42,13 @@
     <div class="col-xs-3 col-md-3"></div>
 </div>
 <div class="row" [hidden]="check">
-    <div class="col-xs-9 col-md-8"></div>
-    <div class="col-xs-3 col-md-4">
+    <div class="col-xs-8 col-md-8"></div>
+    <div class="col-xs-2 col-md-2">
         <label>Total:</label>
-        <label>{{total}}</label>
     </div>
+    <div class="col-xs-2 col-md-2">
+            <label style="color: red; float: left;">{{totalPrice | number}} đ</label>
+        </div>
 </div>
 <div class="row" [hidden]="check">
     <div class="col-xs-9 col-md-9"></div>

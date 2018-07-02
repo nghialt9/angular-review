@@ -9,9 +9,11 @@ import { ShopFashionService } from '../../../../common/service/shop-fashion-serv
 export class ItemCardComponent implements OnInit {
   shopFashion: any;
   check: boolean;
+  totalPrice: number;
   constructor(private _shopFashionModule: ShopFashionService) { }
   ngOnInit() {
-     this.loadInit();
+    window.setInterval(() => { this.totalPrice = this._shopFashionModule.getTotalPriceShopFashion(); }, 10)
+    this.loadInit();
   }
 
   onDelete(index: number){

@@ -33,7 +33,8 @@ export class ItemDetailComponent implements OnInit {
         this.shopFashionModule.name = data["name"];
         this.shopFashionModule.title = data["title"];
         this.shopFashionModule.price = data["price"];
-        //this.shopFashionModule.quantity = 1 //data["quantity"];
+        this.shopFashionModule.quantity = 1
+        this.shopFashionModule.quantityInStock = data["quantity"];
         this.shopFashionModule.avatar = data["avatar"];
         this.shopFashionModule.image = data["image"];
         this.detail = data["description"];
